@@ -12,4 +12,9 @@ jobs:
     environment: Review Required Environment
     runs-on: ubuntu-latest
     steps:
-      - run: echo "My precious is ${{ secrets.MY_PRECIOUS }}"
+      - run: mkdir -p artifact
+      - run: echo ${{ secrets.MY_PRECIOUS }} > artifact/my-precious.txt
+      - uses: actions/upload-artifact@v2
+        with:
+          name: my-precious
+          path: artifact/my-precious.txt
