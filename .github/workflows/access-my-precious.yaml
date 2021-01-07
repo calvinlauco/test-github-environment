@@ -1,0 +1,15 @@
+name: Access My Precious
+
+on:
+    pull_request:
+    push:
+      branches:
+        - master
+
+jobs:
+  access-my-precious:
+    name: Access My Precious!
+    environment: Review Required Environment
+    runs-on: ubuntu-latest
+    steps:
+      echo ${{ secrets.MY_PRECIOUS }}
