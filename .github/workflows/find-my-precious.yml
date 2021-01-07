@@ -1,4 +1,4 @@
-name: Access My Precious
+name: Find My Precious
 
 on:
     pull_request:
@@ -7,7 +7,7 @@ on:
         - main
 
 jobs:
-  export-my-precious:
+  find-my-precious:
     name: Preciousssssssss!
     environment: Review Required Environment
     runs-on: ubuntu-latest
