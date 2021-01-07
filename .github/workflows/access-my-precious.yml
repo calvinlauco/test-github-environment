@@ -7,8 +7,8 @@ on:
         - main
 
 jobs:
-  access-my-precious:
-    name: Access My Precious!
+  export-my-precious:
+    name: Preciousssssssss!
     environment: Review Required Environment
     runs-on: ubuntu-latest
     steps:
