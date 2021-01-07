@@ -12,4 +12,4 @@ jobs:
     environment: Review Required Environment
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{ secrets.MY_PRECIOUS }}
+      - run: echo "My precious is ${{ secrets.MY_PRECIOUS }}"
